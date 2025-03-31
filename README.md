@@ -1,54 +1,18 @@
-# React + TypeScript + Vite
+# Vaquita Protocol
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vaquita is a save-to-earn DeFi platform using game theory to incentivize long-term savings with a dynamic reward pool. We gamify savings by rewarding users who stay committed with added interest while penalizing early withdrawals, ensuring higher returns.
 
-Currently, two official plugins are available:
+## 🌐 Resources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📂 **Repository:** Access the project repo [here](https://github.com/raptor0929/vaquita-stellar)
+- 🎥 **Pitch Deck:** This is the pitch deck for the project, providing a concise overview of its key elements. It helps to understand the problem, solution, business model, and overall impact more clearly. [Watch the Pitch Deck](https://www.loom.com/share/920b47a8e48f42fc89034247e62aa050)
 
-## Expanding the ESLint configuration
+### Tracks Aleph Hackaton March'25
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 💻 **contract:** `CBRGXSNDSJCXIW3OBR5LP7CSVHXVTIM7NN5Q4BPCUAAB2DFPNA7QRF4H` — View the [Vaquita Contract](https://stellar.expert/explorer/testnet/contract/CBRGXSNDSJCXIW3OBR5LP7CSVHXVTIM7NN5Q4BPCUAAB2DFPNA7QRF4H).
+[Demo](https://app.vaquita.fi/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  **Methods:**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  - 🏁 `deposit`: Creates a new deposit for the user.
+  - 💰 `withdraw`: Withdraw the deposit it has made
